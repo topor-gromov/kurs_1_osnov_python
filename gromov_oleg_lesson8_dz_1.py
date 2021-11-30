@@ -1,7 +1,7 @@
 import re
 import sys
 
-RE_EMAIL = re.compile(r'^([a-zA-Z.]+)[@]([a-zA-Z]+[.][a-zA-Z]+$)')
+RE_EMAIL = re.compile(r'^([a-zA-Z0-9._\-]+)[@]([a-zA-Z]+[.][a-zA-Z]+$)')
 
 
 def email_parse(def_user_email):
